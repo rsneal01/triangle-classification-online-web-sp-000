@@ -21,7 +21,8 @@ class Triangle
       :isosceles
     elsif length1 != length2 || length2 != length3 || length1 != length3
       :scalene
-    
+    elsif length1 + length2 < length3 || length2 + length3 < length1 || length3 + length1 < length2
+      raise TriangleError
     end
   end
 
