@@ -22,9 +22,9 @@ class Triangle
     elsif length1 != length2 || length2 != length3 || length1 != length3
       :scalene
     elsif length1 == 0 && length2 == 0 && length3 == 0
-      begin
+      # begin
         raise TriangleError
-      end
+      # end
     end
   end
   
